@@ -28,9 +28,8 @@ jobs:
       - name: Build the html.
         run: python generateHtml.py
       
-      # Upload artifacts
-      - name: Replace index.html
+      - name: Upload artifact.
         uses: actions/upload-artifact@v2
         with:
           name: index.html
-          path: .
+          path: index.html
