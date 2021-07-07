@@ -19,8 +19,3 @@ jobs:
         with:
           name: index
           path: ./index.html
-      - name: Download Artifact
-        uses: actions/download-artifact@master
-        with:
-          name: index
-          path: index.html
