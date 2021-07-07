@@ -15,6 +15,9 @@ jobs:
       - name: Build the html.
         run: python generateHtml.py
         
+      - name: Delete existing index.
+        run: rm -rf index.html
+        
       - uses: actions/upload-artifact@v2
         with:
           name: index
